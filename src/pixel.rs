@@ -1,6 +1,6 @@
-pub const WIDTH: i32 = 10;
-pub const HEIGHT: i32 = 10;
-pub const SCALE_FACTOR: i32 = 30;
+pub const WIDTH: i32 = 256;
+pub const HEIGHT: i32 = 256;
+pub const SCALE_FACTOR: i32 = 3;
 
 pub const AIR: i32 = 0;
 pub const ROCK: i32 = 1;
@@ -12,9 +12,10 @@ pub const D_ROCK: i32 = 3;
 pub const D_SAND: i32 = 2;
 pub const D_WATER: i32 = 1;
 
-pub const COL_ROCK: [f32; 4] = [1.0, 0.0, 0.0, 1.0];
-pub const COL_SAND: [f32; 4] = [1.0, 0.0, 0.0, 1.0];
-pub const COL_WATER: [f32; 4] = [1.0, 0.0, 0.0, 1.0];
+pub const COL_AIR: [f32; 4] = [0.0; 4];
+pub const COL_ROCK: [f32; 4] = [0.4, 0.4, 0.4, 1.0];
+pub const COL_SAND: [f32; 4] = [1.0, 0.53, 0.0, 1.0];
+pub const COL_WATER: [f32; 4] = [0.0, 0.25, 1.0, 1.0];
 
 const X: usize = 0;
 const Y: usize = 1;
