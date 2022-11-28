@@ -16,7 +16,7 @@ fn main() {
     // make a new window called Pixel Physics
     let window: PistonWindow =
         WindowSettings::new("Pixel Physics", [(WIDTH * SCALE_FACTOR) as u32, (HEIGHT * SCALE_FACTOR) as u32])
-            .resizable(true).build().unwrap();
+            .resizable(false).build().unwrap();
     let window = window.max_fps(30);
     // let window = window.ups(1);
     let mut window = window.exit_on_esc(true);

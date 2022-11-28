@@ -4,7 +4,7 @@ pub const WIDTH: i32 = 256;
 pub const HEIGHT: i32 = WIDTH;
 
 pub const MAX_CHUNK_SIZE: i32 = WIDTH;
-const SQUARE_CHUNK_SCAN: bool = true;
+const SQUARE_CHUNK_SCAN: bool = false;
 const RECT_SCAN_X_BIAS: bool = false;
 const CHUNK_COARSENESS: i32 = 8;
 
