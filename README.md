@@ -1,7 +1,6 @@
 # Pixel Physics
 This is a practice project I made in order to learn Rust.
-Download and run the executable file on your computer if you want to for some reason,
-but I would honestly advise against it because it's a random exe from some guy.
+Download and run the executable in order to use the project.
 
 **KNOWN BUG:** The clock speed is currently not set so the game just runs as fast as possible.
 
