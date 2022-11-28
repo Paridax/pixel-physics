@@ -1,3 +1,6 @@
+// LAUNCH GRAPHICALLY: ONLY WHEN RELEASING
+#![windows_subsystem = "windows"]
+
 extern crate piston_window;
 extern crate graphics;
 extern crate rand;
@@ -14,7 +17,8 @@ fn main() {
     let window: PistonWindow =
         WindowSettings::new("Pixel Physics", [(WIDTH * SCALE_FACTOR) as u32, (HEIGHT * SCALE_FACTOR) as u32])
             .resizable(true).build().unwrap();
-    let window = window.ups(1);
+    let window = window.max_fps(30);
+    // let window = window.ups(1);
     let mut window = window.exit_on_esc(true);
 
     let (mut mouse_x, mut mouse_y) = (0, 0);
